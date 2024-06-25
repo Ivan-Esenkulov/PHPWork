@@ -1,7 +1,9 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 
 <?php
+
 use Bitrix\Main\Page\Asset;
+
 global $APPLICATION;
 global $USER;
 const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
@@ -89,69 +91,24 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
     </header>
     <!-- /header -->
     <!-- nav -->
-    <nav class="nav">
-        <div class="inner-wrap">
-            <div class="menu-block popup-wrap">
-                <a href="" class="btn-menu btn-toggle"></a>
-                <div class="menu popup-block">
-                    <ul class="">
-                        <li class="main-page"><a href="">Главная</a>
-                        </li>
-                        <li>
-                            <a href="">Компания</a>
-                            <ul>
-                                <li>
-                                    <a href="">Пункт 1</a>
-                                    <ul>
-                                        <li><a href="">Пункт 1</a>
-                                        </li>
-                                        <li><a href="">Пункт 2</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Пункт 2</a>
-                                </li>
-                                <li><a href="">Пункт 3</a>
-                                </li>
-                                <li><a href="">Пункт 4</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="">Новости</a>
-                        </li>
-                        <li>
-                            <a href="">Каталог</a>
-                            <ul>
-                                <li>
-                                    <a href="">Пункт 1</a>
-                                    <ul>
-                                        <li><a href="">Пункт 1</a>
-                                        </li>
-                                        <li><a href="">Пункт 2</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Пункт 2</a>
-                                </li>
-                                <li><a href="">Пункт 3</a>
-                                </li>
-                                <li><a href="">Пункт 4</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="">Фотогалерея</a>
-                        </li>
-                        <li><a href="">Партнерам</a>
-                        </li>
-                        <li><a href="">Контакты</a>
-                        </li>
-                    </ul>
-                    <a href="" class="btn-close"></a>
-                </div>
-                <div class="menu-overlay"></div>
-            </div>
-        </div>
-    </nav>
+    <? $APPLICATION->IncludeComponent(
+        "bitrix:menu",
+        "horizontal_top_temp",
+        array(
+            "ALLOW_MULTI_SELECT" => "N",
+            "CHILD_MENU_TYPE" => "left",
+            "DELAY" => "N",
+            "MAX_LEVEL" => "3",
+            "MENU_CACHE_GET_VARS" => array(),
+            "MENU_CACHE_TIME" => "3600",
+            "MENU_CACHE_TYPE" => "N",
+            "MENU_CACHE_USE_GROUPS" => "Y",
+            "ROOT_MENU_TYPE" => "top",
+            "USE_EXT" => "Y",
+            "COMPONENT_TEMPLATE" => "horizontal_top_temp"
+        ),
+        false
+    ); ?>
     <!-- /nav -->
     <!-- breadcrumbs -->
     <?php if ($APPLICATION->GetCurPage() != '/'): ?>
@@ -178,7 +135,11 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                     <?php endif; ?>
 
                     <?php if ($APPLICATION->GetCurPage() == '/'): ?>
-                        <p>«Мебельная компания» осуществляет производство мебели на высококлассном оборудовании с применением минимальной доли ручного труда, что позволяет обеспечить высокое качество нашей продукции. Налажен производственный процесс как массового и индивидуального характера, что с одной стороны позволяет обеспечить постоянную номенклатуру изделий и индивидуальный подход – с другой.
+                        <p>«Мебельная компания» осуществляет производство мебели на высококлассном оборудовании с
+                            применением минимальной доли ручного труда, что позволяет обеспечить высокое качество нашей
+                            продукции. Налажен производственный процесс как массового и индивидуального характера, что с
+                            одной стороны позволяет обеспечить постоянную номенклатуру изделий и индивидуальный подход –
+                            с другой.
                         </p>
 
                         <!-- index column -->
@@ -202,7 +163,8 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                                                     <a href="" class="photo-block">
                                                         <img src="<?= CONNECTED_RESOURCES_PATH ?>/img/new01.jpg" alt="">
                                                     </a>
-                                                    <div class="text"><a href="">Угловой диван "Титаник",  с большим выбором расцветок и фактур.</a>
+                                                    <div class="text"><a href="">Угловой диван "Титаник", с большим
+                                                            выбором расцветок и фактур.</a>
                                                         <a href="" class="btn-arr"></a>
                                                     </div>
                                                 </div>
@@ -218,7 +180,8 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                                                     <a href="" class="photo-block">
                                                         <img src="<?= CONNECTED_RESOURCES_PATH ?>/img/new02.jpg" alt="">
                                                     </a>
-                                                    <div class="text"><a href="">Угловой диван "Титаник",  с большим выбором расцветок и фактур.</a>
+                                                    <div class="text"><a href="">Угловой диван "Титаник", с большим
+                                                            выбором расцветок и фактур.</a>
                                                         <a href="" class="btn-arr"></a>
                                                     </div>
                                                 </div>
@@ -234,7 +197,8 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                                                     <a href="" class="photo-block">
                                                         <img src="<?= CONNECTED_RESOURCES_PATH ?>/img/new03.jpg" alt="">
                                                     </a>
-                                                    <div class="text"><a href="">Угловой диван "Титаник",  с большим выбором расцветок и фактур.</a>
+                                                    <div class="text"><a href="">Угловой диван "Титаник", с большим
+                                                            выбором расцветок и фактур.</a>
                                                         <a href="" class="btn-arr"></a>
                                                     </div>
                                                 </div>
@@ -255,7 +219,8 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                                             <div class="item">
                                                 <div class="title"><a href="">29 августа 2012</a>
                                                 </div>
-                                                <div class="text"><a href="">Поступление лучших офисных кресел из Германии </a>
+                                                <div class="text"><a href="">Поступление лучших офисных кресел из
+                                                        Германии </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -263,7 +228,8 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                                             <div class="item">
                                                 <div class="title"><a href="">29 августа 2012</a>
                                                 </div>
-                                                <div class="text"><a href="">Мастер-класс дизайнеров  из Италии для производителей мебели </a>
+                                                <div class="text"><a href="">Мастер-класс дизайнеров из Италии для
+                                                        производителей мебели </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -271,7 +237,8 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                                             <div class="item">
                                                 <div class="title"><a href="">29 августа 2012</a>
                                                 </div>
-                                                <div class="text"><a href="">Поступление лучших офисных кресел из Германии </a>
+                                                <div class="text"><a href="">Поступление лучших офисных кресел из
+                                                        Германии </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -279,7 +246,8 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                                             <div class="item">
                                                 <div class="title"><a href="">29 августа 2012</a>
                                                 </div>
-                                                <div class="text"><a href="">Наша дилерская сеть расширилась теперь ассортимент наших товаров доступен в Казани </a>
+                                                <div class="text"><a href="">Наша дилерская сеть расширилась теперь
+                                                        ассортимент наших товаров доступен в Казани </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -304,7 +272,8 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                                     <div class="item">
                                         <div class="title"><a href="">29 августа 2012, Москва</a>
                                         </div>
-                                        <div class="text"><a href="">Семинар производителей мебели России и СНГ, Обсуждение тенденций.</a>
+                                        <div class="text"><a href="">Семинар производителей мебели России и СНГ,
+                                                Обсуждение тенденций.</a>
                                         </div>
                                     </div>
                                 </div>
@@ -312,7 +281,8 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                                     <div class="item">
                                         <div class="title"><a href="">29 августа 2012, Москва</a>
                                         </div>
-                                        <div class="text"><a href="">Открытие шоу-рума на Невском проспекте. Последние модели в большом ассортименте.</a>
+                                        <div class="text"><a href="">Открытие шоу-рума на Невском проспекте. Последние
+                                                модели в большом ассортименте.</a>
                                         </div>
                                     </div>
                                 </div>
@@ -320,7 +290,8 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                                     <div class="item">
                                         <div class="title"><a href="">29 августа 2012, Москва</a>
                                         </div>
-                                        <div class="text"><a href="">Открытие нового магазина в нашей  дилерской сети.</a>
+                                        <div class="text"><a href="">Открытие нового магазина в нашей дилерской
+                                                сети.</a>
                                         </div>
                                     </div>
                                 </div>

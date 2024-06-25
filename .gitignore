@@ -1,3 +1,5 @@
 .idea/
 bitrix/
 test/
+!/local/templates/exam1/components/bitrix
+Ex1DemoMaterials/

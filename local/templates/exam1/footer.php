@@ -4,7 +4,26 @@
 <!-- side -->
 <div class="side">
     <!-- side menu -->
-    <div class="side-block side-menu">
+    <?$APPLICATION->IncludeComponent(
+	"bitrix:menu", 
+	"left_menu", 
+	array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "left",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "1",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "N",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "left",
+		"USE_EXT" => "Y",
+		"COMPONENT_TEMPLATE" => "left_menu"
+	),
+	false
+);?>
+    <!--<div class="side-block side-menu">
         <div class="title-block">Навигация</div>
         <div class="menu-block">
             <ul>
@@ -31,7 +50,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div>-->
     <!-- /side menu -->
     <!-- side anonse -->
     <div class="side-block side-anonse">
