@@ -130,7 +130,7 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                 <div class="cnt">
                     <?php if ($APPLICATION->GetCurPage() != '/'): ?>
                         <header>
-                            <h1>Заголовок страницы</h1>
+                            <h1><?= $APPLICATION->ShowTitle(false) ?></h1>
                         </header>
                     <?php endif; ?>
 

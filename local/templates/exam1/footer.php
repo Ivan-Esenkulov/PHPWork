@@ -23,34 +23,6 @@
 	),
 	false
 );?>
-    <!--<div class="side-block side-menu">
-        <div class="title-block">Навигация</div>
-        <div class="menu-block">
-            <ul>
-                <li><a href="">Кухни</a>
-                </li>
-                <li><a href="">Гарнитуры</a>
-                </li>
-                <li class="selected">
-                    <a href="">Спальни</a>
-                </li>
-                <li>
-                    <a href="">Шкафы</a>
-                </li>
-                <li><a href="">Столы</a>
-                </li>
-                <li><a href="">Стулья</a>
-                </li>
-                <li>
-                    <a href="">Прихожие</a>
-                </li>
-                <li><a href="">Диваны</a>
-                </li>
-                <li><a href="">Кресла</a>
-                </li>
-            </ul>
-        </div>
-    </div>-->
     <!-- /side menu -->
     <!-- side anonse -->
     <div class="side-block side-anonse">
