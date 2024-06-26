@@ -63,7 +63,17 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                     <input type="text" placeholder="Поиск">
                     <button type="submit"></button>
                 </form>
-                <nav class="menu-block">
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:system.auth.form",
+                    "",
+                    Array(
+                        "FORGOT_PASSWORD_URL" => " /login/",
+                        "PROFILE_URL" => " /login/user.php",
+                        "REGISTER_URL" => " /login/register.php",
+                        "SHOW_ERRORS" => "N"
+                    )
+                );?>
+               <!-- <nav class="menu-block">
                     <ul>
                         <li class="att popup-wrap">
                             <a id="hd_singin_but_open" href="" class="btn-toggle">Войти на сайт</a>
@@ -85,7 +95,7 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
                         <li><a href="">Зарегистрироваться</a>
                         </li>
                     </ul>
-                </nav>
+                </nav>-->
             </div>
         </div>
     </header>

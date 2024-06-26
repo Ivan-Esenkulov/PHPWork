@@ -1,6 +1,6 @@
 .idea/
 bitrix/
 test/
+Ex1DemoMaterials/
 !/local/templates/exam1/components/bitrix
 !/local/templates/exam1/components/bitrix/news/reviews/bitrix
-Ex1DemoMaterials/
