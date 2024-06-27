@@ -53,8 +53,8 @@
                              height="40" alt="CAPTCHA"/><br/><br/>
                         <input type="text" name="captcha_word" maxlength="50" value=""/>
                     <? endif ?>
-                    <div class="frm-row"><input type="submit" name="Login"
-                                                value="<?= GetMessage("AUTH_LOGIN_BUTTON") ?>">
+                    <div class="frm-row">
+                        <input type="submit" name="Login" value="<?= GetMessage("AUTH_LOGIN_BUTTON") ?>">
                     </div>
                     <?if($arResult["AUTH_SERVICES"]):?>
                                 <div class="bx-auth-lbl"><?=GetMessage("socserv_as_user_form")?></div>

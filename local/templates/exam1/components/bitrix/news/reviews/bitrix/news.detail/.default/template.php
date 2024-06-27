@@ -25,13 +25,18 @@ $this->setFrameMode(true);
             <?= $arResult['NAME'] ?>, <?= $arResult['DISPLAY_ACTIVE_FROM'] ?> г., <?= $arResult['PROPERTIES']['POSITION']['VALUE'] ?>, <?= $arResult['PROPERTIES']['COMPANY']['VALUE'] ?>.
         </div>
     </div>
-    <div style="clear: both;" class="review-img-wrap"><img src="<?php echo !empty($arResult['DETAIL_PICTURE']) ?  $arResult['DETAIL_PICTURE']['SRC'] : CONNECTED_RESOURCES_PATH . '/no_photo.jpg' ?>" alt="<?= $arResult['DETAIL_PICTURE']['ALT'] ?? '' ?>"></div>
+    <div style="clear: both;" class="review-img-wrap">
+        <?php $imageResize = CFile::ResizeImageGet($arResult['DETAIL_PICTURE'], ["width" => 66, "height" => 66], BX_RESIZE_IMAGE_EXACT, true); ?>
+        <img src="<?php echo !empty($arResult['DETAIL_PICTURE']) ?  $imageResize['src'] : CONNECTED_RESOURCES_PATH . '/no_photo.jpg' ?>" alt="<?= $arResult['DETAIL_PICTURE']['ALT'] ?? '' ?>">
+    </div>
 </div>
-<div class="exam-review-doc">
-    <p><?= $arResult['DISPLAY_PROPERTIES']['DOCUMENTS']['NAME'] ?>:</p>
-    <?php foreach ($arResult['DISPLAY_PROPERTIES']['DOCUMENTS']['FILE_VALUE'] as $doc): ?>
-        <div  class="exam-review-item-doc"><img class="rew-doc-ico" src="<?= CONNECTED_RESOURCES_PATH ?>/img/icons/pdf_ico_40.png"><a href="<?= $doc['SRC'] ?>"><?= $doc['ORIGINAL_NAME'] ?></a></div>
-    <?php endforeach; ?>
-</div>
+<?php if (isset($arResult['DISPLAY_PROPERTIES']['DOCUMENTS'])): ?>
+    <div class="exam-review-doc">
+        <p><?= $arResult['DISPLAY_PROPERTIES']['DOCUMENTS']['NAME'] ?>:</p>
+        <?php foreach ($arResult['DISPLAY_PROPERTIES']['DOCUMENTS']['FILE_VALUE'] as $doc): ?>
+            <div  class="exam-review-item-doc"><img class="rew-doc-ico" src="<?= CONNECTED_RESOURCES_PATH ?>/img/icons/pdf_ico_40.png"><a href="<?= $doc['SRC'] ?>" download><?= $doc['ORIGINAL_NAME'] ?></a></div>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>
 <hr>
 <a href="<?= $arResult['LIST_PAGE_URL'] ?>" class="review-block_back_link"> &larr; К списку отзывов</a>
