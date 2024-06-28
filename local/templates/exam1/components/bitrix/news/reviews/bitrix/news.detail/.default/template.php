@@ -14,7 +14,6 @@ $this->setFrameMode(true);
 ?>
 
 <?php /*debugFun($arResult); */?>
-
 <hr>
 <div class="review-block">
     <div class="review-text">

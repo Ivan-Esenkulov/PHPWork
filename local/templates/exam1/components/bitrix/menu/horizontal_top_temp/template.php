@@ -30,7 +30,7 @@
                             <ul>
                                 <div class="menu-text"><?= $arItem["PARAMS"]['TEXT_CONST'] ?></div>
                                 <? else: ?>
-                                <li><a href="<?= $arItem["LINK"] ?>"><?= $arItem['TEXT'] ?></a>
+                                <li><a href="<?= $arItem["LINK"] ?>" <?php if($arItem["PARAMS"]['COLOR']): ?> class="<?= $arItem["PARAMS"]['COLOR'] ?>" <?php endif; ?>><?= $arItem['TEXT'] ?></a>
                                     <ul>
                                         <div class="menu-text"><?= $arItem["PARAMS"]['TEXT_CONST'] ?></div>
                                         <? endif ?>
