@@ -34,6 +34,8 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
     $APPLICATION->ShowMeta("keywords");
     $APPLICATION->ShowMeta("description");
     $APPLICATION->ShowMeta("author");
+
+    $APPLICATION->SetPageProperty('color', 'red');
     ?>
 
     <title><?php $APPLICATION->ShowTitle(); ?></title>

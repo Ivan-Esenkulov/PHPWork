@@ -2,7 +2,7 @@
 
 <? if (!empty($arResult)): ?>
     <div class="side-block side-menu">
-        <div class="title-block">Навигация</div>
+        <div class="title-block <?php $APPLICATION->ShowProperty('color') ?>">Навигация</div>
         <div class="menu-block">
             <ul>
 
