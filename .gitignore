@@ -4,3 +4,5 @@ test/
 Ex1DemoMaterials/
 !/local/templates/exam1/components/bitrix
 !/local/templates/exam1/components/bitrix/news/reviews/bitrix
+!/local/templates/furniture_pale-blue/components/bitrix
+!/local/templates/furniture_pale-blue/components/bitrix/news/news_redactor/bitrix

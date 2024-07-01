@@ -1,5 +1,7 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 
+<?php /*= debugFun($arResult) */?>
+
 <? if (!empty($arResult)): ?>
     <div class="item">
         <div class="title-block">О магазине</div>

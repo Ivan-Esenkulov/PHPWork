@@ -1,4 +1,5 @@
-<?
+<?php
+
 define("NEED_AUTH", true);
 
 if ($_GET['logout'] === 'yes') {

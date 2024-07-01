@@ -2,6 +2,8 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Отзывы");
 ?>
+<?php /*= SITE_DIR */?><!--<br>
+--><?php /*= SITE_TEMPLATE_PATH */?>
 
 <?$APPLICATION->IncludeComponent(
     "bitrix:news",
