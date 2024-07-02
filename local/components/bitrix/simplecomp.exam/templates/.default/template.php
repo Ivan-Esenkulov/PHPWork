@@ -1,4 +1,4 @@
-<?php
+<?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 /**
  * @var array $arParams
@@ -8,6 +8,11 @@
 /*debugFun($arParams);*/
 /*debugFun($arResult);*/
 ?>
+
+<?php $this->SetViewTarget('item_price');?>
+    <div style="color:red; margin: 34px 15px 35px 15px"><?= "Товар с наименьшей ценой: " . $arResult["ITEM_WITH_MIN_PRICE"]["NAME"] . " - " . $arResult["ITEM_WITH_MIN_PRICE"]["PROPERTIES"]["0"]["VALUE"] ?></div>
+    <div style="color:red; margin: 34px 15px 35px 15px"><?= "Товар с высокой ценой: " . $arResult["ITEM_WITH_MAX_PRICE"]["NAME"] . " - " . $arResult["ITEM_WITH_MAX_PRICE"]["PROPERTIES"]["0"]["VALUE"] ?></div>
+<?php $this->EndViewTarget();?>
 
 <div class="container">
     <div class="row">

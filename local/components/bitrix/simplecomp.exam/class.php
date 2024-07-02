@@ -95,6 +95,23 @@ class MyComponentCatalog extends CBitrixComponent
         unset($news);
         unset($this->arResult['IBLOCK_ID_2_SECTION']);
 
+        $min = 0;
+        $max = 0;
+        $indexMin = 0;
+        $indexMax = 0;
+        foreach ($this->arResult['ITEMS'] as $key => $item) {
+            if ($item['PROPERTIES'][0]['VALUE'] < $min) {
+                $min = $item['PROPERTIES'][0]['VALUE'];
+                $indexMin = $key;
+            }
+            if ($item['PROPERTIES'][0]['VALUE'] > $max) {
+                $max = $item['PROPERTIES'][0]['VALUE'];
+                $indexMax = $key;
+            }
+        }
+
+        $this->arResult['ITEM_WITH_MIN_PRICE'] = $this->arResult['ITEMS'][$indexMin];
+        $this->arResult['ITEM_WITH_MAX_PRICE'] = $this->arResult['ITEMS'][$indexMax];
 
         $this->arResult['TITLE'] = 'В каталоге товаров представлено товаров: ' . count($this->arResult['ITEMS']);
     }
