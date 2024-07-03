@@ -32,7 +32,7 @@ $APPLICATION->SetTitle("Контакты");
 </ul>
 
 <h2>Офис в Москве</h2>
-<p><?$APPLICATION->IncludeComponent("bitrix:map.google.view", ".default", array(
+<p><?$APPLICATION->IncludeComponent("bitrix:map.google.view", "catalog_test", array(
 	"KEY" => "ABQIAAAAOSNukcWVjXaGbDo6npRDcxS1yLxjXbTnpHav15fICwCqFS-qhhSby0EyD6rK_qL4vuBSKpeCz5cOjw",
 	"INIT_MAP_TYPE" => "NORMAL",
 	"MAP_DATA" => "a:3:{s:10:\"google_lat\";s:7:\"55.7383\";s:10:\"google_lon\";s:7:\"37.5946\";s:12:\"google_scale\";i:13;}",

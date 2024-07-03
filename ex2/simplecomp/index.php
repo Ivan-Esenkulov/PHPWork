@@ -9,7 +9,7 @@ $APPLICATION->SetTitle("Простой компонент");
     array(
         "IBLOCK_ID_1" => "1",
         "IBLOCK_ID_2" => "2",
-        "COMPONENT_TEMPLATE" => ".default",
+        "COMPONENT_TEMPLATE" => "catalog_test",
         "NAME" => "Мой компонент",
         "CODE_USER_PROPERTY" => "",
         "TYPE_CACHE" => "",

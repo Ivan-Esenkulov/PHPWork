@@ -6,7 +6,7 @@ use Bitrix\Main\Page\Asset;
 
 global $APPLICATION;
 global $USER;
-const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
+const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../catalog_test';
 ?>
 <!DOCTYPE html>
 <html lang="<?= LANGUAGE_ID ?>">
@@ -111,12 +111,12 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../.default';
     <?php if ($APPLICATION->GetCurPage() != '/'): ?>
         <?$APPLICATION->IncludeComponent(
             "bitrix:breadcrumb",
-            ".default",
+            "catalog_test",
             array(
                 "PATH" => "",
                 "SITE_ID" => "s1",
                 "START_FROM" => "0",
-                "COMPONENT_TEMPLATE" => ".default"
+                "COMPONENT_TEMPLATE" => "catalog_test"
             ),
             false
         );?>

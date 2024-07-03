@@ -14,7 +14,7 @@ $APPLICATION->SetTitle("Обратная связь");
 			0 => "EMAIL",
 		),
 		"USE_CAPTCHA" => "Y",
-		"COMPONENT_TEMPLATE" => ".default"
+		"COMPONENT_TEMPLATE" => "catalog_test"
 	),
 	false
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

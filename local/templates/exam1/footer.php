@@ -30,12 +30,12 @@
         <div class="item">
     <?$APPLICATION->IncludeComponent(
         "bitrix:main.include",
-        ".default",
+        "catalog_test",
         array(
             "AREA_FILE_SHOW" => "sect",
             "AREA_FILE_SUFFIX" => "inc",
             "EDIT_TEMPLATE" => "",
-            "COMPONENT_TEMPLATE" => ".default",
+            "COMPONENT_TEMPLATE" => "catalog_test",
             "AREA_FILE_RECURSIVE" => "Y"
         ),
         false
@@ -114,7 +114,7 @@
                 "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
                 "PAGER_SHOW_ALL" => "N",
                 "PAGER_SHOW_ALWAYS" => "N",
-                "PAGER_TEMPLATE" => ".default",
+                "PAGER_TEMPLATE" => "catalog_test",
                 "PAGER_TITLE" => "Новости",
                 "PARENT_SECTION" => "",
                 "PARENT_SECTION_CODE" => "",
