@@ -12,6 +12,7 @@ use Bitrix\Main\Page\Asset;
     <? $APPLICATION->ShowHead(); ?>
     <link href="<?= SITE_TEMPLATE_PATH ?>/common.css" type="text/css" rel="stylesheet"/>
     <link href="<?= SITE_TEMPLATE_PATH ?>/colors.css" type="text/css" rel="stylesheet"/>
+<?php $APPLICATION->ShowLink('canonical'); ?>
 
     <!--[if lte IE 6]>
 	<style type="text/css">
@@ -32,6 +33,7 @@ use Bitrix\Main\Page\Asset;
     $asset = Asset::getInstance();
     $APPLICATION->ShowMeta("specialdate");
     $APPLICATION->SetPageProperty("specialdate", 100);
+
     ?>
     <title><? $APPLICATION->ShowTitle() ?></title>
 </head>

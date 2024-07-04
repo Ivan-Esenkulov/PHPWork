@@ -1,4 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<?php /*debugFun($arParams); */?>
 <?$ElementID = $APPLICATION->IncludeComponent(
 	"bitrix:news.detail",
 	"",
@@ -32,6 +33,7 @@
 		"PAGER_TEMPLATE" => $arParams["DETAIL_PAGER_TEMPLATE"],
 		"PAGER_SHOW_ALL" => $arParams["DETAIL_PAGER_SHOW_ALL"],
 		"CHECK_DATES" => $arParams["CHECK_DATES"],
+        'ID_FOR_REL_CANONICAL' => $arParams['ID_FOR_REL_CANONICAL'],
 
 		"ELEMENT_ID" => $arResult["VARIABLES"]["ELEMENT_ID"],
 		"ELEMENT_CODE" => $arResult["VARIABLES"]["ELEMENT_CODE"],
