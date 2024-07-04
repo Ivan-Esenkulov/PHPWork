@@ -1,5 +1,5 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
-<?php debugFun($arResult); ?>
+<?php /*debugFun($arResult); */?>
 <div class="news-detail">
     <?php
     if ($arResult['ID'] == $arResult['ELEMEN_CANONICAL_LINK'][0]['PROPERTIES'][0]['VALUE']) {

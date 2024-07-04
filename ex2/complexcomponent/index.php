@@ -10,7 +10,7 @@ $APPLICATION->SetTitle("Комплексный компонент");
 		"COMPONENT_TEMPLATE" => ".default",
 		"IBLOCK_TYPE" => "products",
 		"IBLOCK_ID" => "2",
-		"SEF_MODE" => "N",
+		"SEF_MODE" => "Y",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
@@ -77,9 +77,12 @@ $APPLICATION->SetTitle("Комплексный компонент");
 		"SET_STATUS_404" => "N",
 		"SHOW_404" => "N",
 		"MESSAGE_404" => "",
-		"VARIABLE_ALIASES" => array(
-			"SECTION_ID" => "SECTION_ID",
-			"ELEMENT_ID" => "ELEMENT_ID",
+		"SEF_FOLDER" => "/ex2/complexcomponent/",
+		"SEF_URL_TEMPLATES" => array(
+			"sections_top" => "",
+			"section" => "#SECTION_ID#/",
+			"detail" => "#SECTION_ID#/#ELEMENT_ID#/",
+			"exampage" => "exam/new/#PARAM1#/",
 		)
 	),
 	false
