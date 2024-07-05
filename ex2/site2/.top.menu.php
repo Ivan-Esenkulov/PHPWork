@@ -1,4 +1,3 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?
 $aMenuLinks = Array(
 	Array(
@@ -32,6 +31,20 @@ $aMenuLinks = Array(
 	Array(
 		"Contacts", 
 		"contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"about", 
+		"/ex2/site2/about.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"main", 
+		"/ex2/site2/index.php",
 		Array(), 
 		Array(), 
 		"" 

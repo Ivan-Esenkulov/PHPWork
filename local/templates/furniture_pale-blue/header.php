@@ -12,7 +12,7 @@ use Bitrix\Main\Page\Asset;
     <? $APPLICATION->ShowHead(); ?>
     <link href="<?= SITE_TEMPLATE_PATH ?>/common.css" type="text/css" rel="stylesheet"/>
     <link href="<?= SITE_TEMPLATE_PATH ?>/colors.css" type="text/css" rel="stylesheet"/>
-<?php $APPLICATION->ShowLink('canonical'); ?>
+    <?php $APPLICATION->ShowLink('canonical'); ?>
 
     <!--[if lte IE 6]>
 	<style type="text/css">
@@ -133,6 +133,19 @@ use Bitrix\Main\Page\Asset;
                     ?>
                 </div>
             </div>
+            <div class="content-block" style="text-align: center">
+                <h3>Выберите язык</h3>
+                <? $APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    array(
+                        "AREA_FILE_SHOW" => "file",
+                        "AREA_FILE_SUFFIX" => "inc",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => "/motto_index.php"
+                    )
+                ); ?>
+            </div>
 
             <div class="content-block">
                 <div class="content-block-inner">
@@ -146,9 +159,9 @@ use Bitrix\Main\Page\Asset;
                 </div>
             </div>
             <?php
-                if ($APPLICATION->GetCurPage() == '/ex2/simplecomp/') {
-                    $APPLICATION->ShowViewContent('item_price');
-                }
+            if ($APPLICATION->GetCurPage() == '/ex2/simplecomp/') {
+                $APPLICATION->ShowViewContent('item_price');
+            }
             ?>
             <div class="information-block">
                 <div class="top"></div>

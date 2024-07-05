@@ -74,7 +74,7 @@ if (!empty($arParams['NEWS_IBLOCK_ID'])) {
 
 
     $arButtons = CIBlock::GetPanelButtons($arParams['NEWS_IBLOCK_ID']);
-    debugFun($arButtons);
+   /* debugFun($arButtons);*/
     $this->AddIncludeAreaIcons(
         [
             [
