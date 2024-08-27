@@ -10,7 +10,7 @@
  * @var string $componentPath
  * @var string $templateFolder
  */
-/*echo 'Test';*/
+
 $this->setFrameMode(true);
 
 if (!empty($arResult['ITEMS']))
@@ -40,13 +40,13 @@ if (!empty($arResult['ITEMS']))
 	switch ($arParams['VIEW_MODE'])
 	{
 		case 'BANNER':
-			include($fullPath.'/banner/template.php');
+			include($fullPath.'/banner/templates.php');
 			break;
 		case 'SLIDER':
-			include($fullPath.'/slider/template.php');
+			include($fullPath.'/slider/templates.php');
 			break;
 		case 'SECTION':
-			include($fullPath.'/section/template.php');
+			include($fullPath.'/section/templates.php');
 			break;
 	}
 	?>

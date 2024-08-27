@@ -1,5 +1,5 @@
 <?
-//Navigation chain template
+//Navigation chain templates
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
 $arChainBody = array();

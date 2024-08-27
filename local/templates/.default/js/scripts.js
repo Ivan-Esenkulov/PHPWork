@@ -159,3 +159,52 @@ $(document).ready(function(){
 		return false;
 	})
 });
+
+$(document).ready(function () {
+	$("#form_summary").submit(function (e) {
+		e.preventDefault();
+		let formToWorkOn = document.querySelector('#form_summary');
+		let formData = new FormData(formToWorkOn);
+		$.ajax({
+			type: "post",
+			url: '/local/ajax/form_summary.php',
+			cache: false,
+			contentType: false,
+			processData: false,
+			data: formData,
+			dataType: "html",
+			success: function (result) {
+				formToWorkOn.reset();
+				$('.close').click();
+				//$('.modal-content').hide();
+				//$('.modal-backdrop').hide();
+				//$("body").removeClass("modal-open");
+				alert(result);
+			}
+		});
+	})
+});
+$(document).ready(function () {
+	$("#ttttt").submit(function (e) {
+		e.preventDefault();
+		let formToWorkOn = document.querySelector('#ttttt');
+		let formData = new FormData(formToWorkOn);
+		$.ajax({
+			type: "post",
+			url: '/test_form/heandler.php',
+			cache: false,
+			contentType: false,
+			processData: false,
+			data: formData,
+			dataType: "html",
+			success: function (result) {
+				formToWorkOn.reset();
+				$('.close').click();
+				//$('.modal-content').hide();
+				//$('.modal-backdrop').hide();
+				//$("body").removeClass("modal-open");
+				alert(result);
+			}
+		});
+	})
+});

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    <script src="jquery-ui-1.13.3.custom/external/jquery/jquery.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>-->
+    <script src="jquery-ui-1.13.3.custom/jquery-ui.js"></script>
+    <style>
+        #langs p {display:none;}
+        #langs p.first {display:block;}
+    </style>
+</head>
+<body>
+<p><a>Hello</a></p>
+<script type="text/javascript">
+    $(function(){
+        $('a').button().click(function(){alert('Hello jQuery UI');});
+    });
+</script>
+
+<!--<h3>Выбранный язык</h3>
+<div id="langs">
+    <p class='first'>Java</p>
+    <p>C/C++</p>
+    <p>PHP</p>
+    <p class='last'>JavaScript</p>
+</div>
+<button id="prev">Назад</button>
+<button id="next">Вперед</button>
+
+
+<button id="slideUp">Скрыть</button>
+<button id="slideDown">Раскрыть</button>
+<br>
+<br>
+
+<img src="/local/templates/furniture_pale-blue/images/product-03.gif" id="ars" /><br>
+<button id="fadeIn">Отобразить</button>
+<button id="fadeOut">Cкрыть</button>
+
+<br>
+<br>
+<br>
+
+<img src="/local/templates/furniture_pale-blue/images/product-03.gif" id="ars1" /><br>
+<button id="anim">Анимация</button>
+<script type="text/javascript">
+    $(function() {
+        $('#ars1').animate({
+            'margin-left': '+=50',
+            width: '-=10',
+            height: '-=10'
+        }, {
+            duration: 1000,
+            step: function (now, fx) {
+                var data = fx.elem.id + ' ' + fx.prop + ': ' + now;
+                $('body').append('<div>' + data + '</div>');
+            },
+            complete: function () {
+                alert('Анимация завершена');
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        $('#ars').fadeTo(2000,0.6);
+        $('#fadeIn').click(function(){
+            $('#ars').fadeIn('slow', function(){alert('Отображено');});
+        });
+        $('#fadeOut').click(function(){
+            $('#ars').fadeOut(2000, function(){alert('Скрыто');});
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function() {
+        $('#slideUp').click(function(){
+            $(this).slideUp();
+        });
+        $('#slideDown').click(function(){
+            $('#slideUp').slideDown();
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function() {
+        var current = $("div#langs p").first();
+        $('#next').click(function(){
+            $(current).not('.last').hide("fast", function() {
+                current = $(current).next('p');
+                $(current).show("fast");
+            });
+        });
+        $('#prev').click(function(){
+            $(current).not('.first').hide("fast", function() {
+                current = $(current).prev('p');
+                $(current).show("fast");
+            });
+        });
+    });
+</script>-->
+</body>
+</html>

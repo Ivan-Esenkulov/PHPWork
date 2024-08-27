@@ -114,8 +114,8 @@ function createHLBlock()
     ];
 
     $arSavedFieldsRes = [];
-    foreach($arFields as $arField){
-        $obUserField  = new CUserTypeEntity;
+    $obUserField = new CUserTypeEntity;
+    foreach ($arFields as $arField) {
         $ID = $obUserField->Add($arField);
         $arSavedFieldsRes[] = $ID;
     }

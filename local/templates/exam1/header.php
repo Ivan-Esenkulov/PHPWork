@@ -65,7 +65,7 @@ const CONNECTED_RESOURCES_PATH = SITE_TEMPLATE_PATH . '/../catalog_test';
                     "bitrix:search.form",
                     "",
                     Array(
-                        "PAGE" => "#SITE_DIR#search/index.php",
+                        "PAGE" => "#SITE_DIR#search/index1.php",
                         "USE_SUGGEST" => "N"
                     )
                 );?>

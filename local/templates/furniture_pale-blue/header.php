@@ -1,7 +1,8 @@
+<?/* require_once $_SERVER['DOCUMENT_ROOT'] . '/local/php_interface/include/trial.php'; */?>
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 <?
 IncludeTemplateLangFile(__FILE__);
-
+/*require_once $_SERVER['DOCUMENT_ROOT'] . '/local/php_interface/include/trial.php';*/
 use Bitrix\Main\Page\Asset;
 
 ?>
@@ -178,6 +179,5 @@ use Bitrix\Main\Page\Asset;
                 <div class="bottom"></div>
             </div>
         </div>
-
         <div id="workarea">
             <h1 id="pagetitle"><? $APPLICATION->ShowTitle(false); ?></h1>

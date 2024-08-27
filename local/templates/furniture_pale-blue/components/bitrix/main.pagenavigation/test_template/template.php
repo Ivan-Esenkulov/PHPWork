@@ -52,15 +52,15 @@ if($arResult["REVERSED_PAGES"] === true):
 		
 		if ($page == $arResult["CURRENT_PAGE"]):
 ?>
-			<span class="<?=($first ? "modern-page-first " : "")?>modern-page-current"><?=$pageNumber?></span>
+			<span class="<?=($first ? "modern_new-page-first " : "")?>modern-page-current"><?=$pageNumber?></span>
 <?
 		elseif($page == $arResult["PAGE_COUNT"]):
 ?>
-			<a href="<?=htmlspecialcharsbx($arResult["URL"])?>" class="<?=($first ? "modern-page-first" : "")?>"><?=$pageNumber?></a>
+			<a href="<?=htmlspecialcharsbx($arResult["URL"])?>" class="<?=($first ? "modern_new-page-first" : "")?>"><?=$pageNumber?></a>
 <?
 		else:
 ?>
-			<a href="<?=htmlspecialcharsbx($component->replaceUrlTemplate($page))?>" class="<?=($first ? "modern-page-first" : "")?>"><?=$pageNumber?></a>
+			<a href="<?=htmlspecialcharsbx($component->replaceUrlTemplate($page))?>" class="<?=($first ? "modern_new-page-first" : "")?>"><?=$pageNumber?></a>
 <?
 		endif;
 		
@@ -118,15 +118,15 @@ else:
 	{
 		if ($page == $arResult["CURRENT_PAGE"]):
 ?>
-			<span class="<?=($first ? "modern-page-first " : "")?>modern-page-current"><?=$page?></span>
+			<span class="<?=($first ? "modern_new-page-first " : "")?>modern-page-current"><?=$page?></span>
 <?
 		elseif($page == 1):
 ?>
-			<a href="<?=htmlspecialcharsbx($arResult["URL"])?>" class="<?=($first ? "modern-page-first" : "")?>">1</a>
+			<a href="<?=htmlspecialcharsbx($arResult["URL"])?>" class="<?=($first ? "modern_new-page-first" : "")?>">1</a>
 <?
 		else:
 ?>
-			<a href="<?=htmlspecialcharsbx($component->replaceUrlTemplate($page))?>" class="<?=($first ? "modern-page-first" : "")?>"><?=$page?></a>
+			<a href="<?=htmlspecialcharsbx($component->replaceUrlTemplate($page))?>" class="<?=($first ? "modern_new-page-first" : "")?>"><?=$page?></a>
 <?
 		endif;
 

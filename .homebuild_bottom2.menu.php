@@ -1,0 +1,32 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Staff",
+		"/staff_homebuilder/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Team",
+		"/our-team_homebuilder/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Careers",
+		"/careers_homebuilder/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+    Array(
+        "Blog",
+        "/blog_homebuilder/",
+        Array(),
+        Array(),
+        ""
+    )
+);
+?>

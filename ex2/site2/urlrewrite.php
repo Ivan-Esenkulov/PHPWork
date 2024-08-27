@@ -4,7 +4,7 @@ $arUrlRewrite = array(
 		"CONDITION"	=>	"#^/services/#",
 		"RULE"	=>	"",
 		"ID"	=>	"bitrix:catalog",
-		"PATH"	=>	"/services/index.php",
+		"PATH"	=>	"/services/index1.php",
 	),
 	array(
 		"CONDITION"	=>	"#^/products/#",

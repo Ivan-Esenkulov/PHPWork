@@ -34,7 +34,7 @@ $MESS["DISPLAY_TOP_PAGER_TIP"] = "Specifies to display navigation links on top o
 $MESS["DISPLAY_BOTTOM_PAGER_TIP"] = "Specifies to display navigation links at the bottom of the page.";
 $MESS["PAGER_TITLE_TIP"] = "The name of an item unit for navigation. For example: photo, image etc.";
 $MESS["PAGER_SHOW_ALWAYS_TIP"] = "If unchecked, the breadcrumb navigation links will not be present if all items fit in a single page. Otherwise, the navigation links will be shown always.";
-$MESS["PAGER_TEMPLATE_TIP"] = "The name of the breadcrumb navigation template. You can leave the field empty to use the default template (<b><i>catalog_test</i></b>). (The system provides an alternative template: <i>orange</i>.)";
+$MESS["PAGER_TEMPLATE_TIP"] = "The name of the breadcrumb navigation templates. You can leave the field empty to use the default templates (<b><i>catalog_test</i></b>). (The system provides an alternative templates: <i>orange</i>.)";
 $MESS["PAGER_DESC_NUMBERING_TIP"] = "Use this option if you want new elements to be placed on top. Thus, only the last page in the breadcrumb navigation structure is modified. All other pages can be cached for a considerably long time.";
 $MESS["PAGER_DESC_NUMBERING_CACHE_TIME_TIP"] = "Time to cache first pages, in seconds, for backward navigation.";
 $MESS["VARIABLE_ALIASES_SECTION_ID_TIP"] = "The name of a variable in which the section ID will be passed, e.g. <b>SECTION_ID</b>.";
@@ -49,7 +49,7 @@ $MESS["MESSAGES_PER_PAGE_TIP"] = "Specifies the count of feedback messages per p
 $MESS["USE_CAPTCHA_TIP"] = "If checked, the CAPTCHA fields will be shown in the feedback form in the public section.";
 $MESS["PATH_TO_SMILE_TIP"] = "The path to a folder containing smileys.";
 $MESS["FORUM_ID_TIP"] = "Select here the forum in which visitors can create their feedback messages.";
-$MESS["URL_TEMPLATES_READ_TIP"] = "The path to a forum thread page (e.g. <b>/communication/forum/index.php?PAGE_NAME=read&FID=#FORUM_ID#&TID=#TOPIC_ID#</b>). If empty, the path template will be taken from the forum settings.";
+$MESS["URL_TEMPLATES_READ_TIP"] = "The path to a forum thread page (e.g. <b>/communication/forum/index1.php?PAGE_NAME=read&FID=#FORUM_ID#&TID=#TOPIC_ID#</b>). If empty, the path templates will be taken from the forum settings.";
 $MESS["FILTER_NAME_TIP"] = "The name of a variable in which the filter settings will be passed. You can leave the field empty to use the default name.";
 $MESS["FILTER_FIELD_CODE_TIP"] = "Here you can choose the fields of an information block element by which the filter can be applied. You can add custom fields as codes in the input fields below.";
 $MESS["FILTER_PROPERTY_CODE_TIP"] = "This field displays the information block element properties available to be used for filtering. You can add custom fields as a code in the input fields below.";

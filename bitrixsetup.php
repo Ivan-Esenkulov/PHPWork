@@ -201,7 +201,7 @@ if (LANG == "ru")
 		"LOADER_NEW_STEPS180" => "не более 180 секунд",
 		"LOADER_NEW_STEPS240" => "не более 240 секунд",
 		"LOADER_NEW_LOAD" => "Загрузить",
-		"LOADER_DESCR" => "Этот скрипт предназначен для загрузки дистрибутивов \"1С-Битрикс\" с сайта <a href=\"https://www.1c-bitrix.ru/download/index.php\" target=\"_blank\">www.1c-bitrix.ru</a> непосредственно на ваш сайт, а так же для распаковки дистрибутива на вашем сайте.<br><br> Загрузите этот скрипт в корневую папку вашего сайта и откройте его в браузере (введите в адресной строке браузера <nobr>http://&lt,ваш сайт&gt,/".$this_script_name."</nobr>).",
+		"LOADER_DESCR" => "Этот скрипт предназначен для загрузки дистрибутивов \"1С-Битрикс\" с сайта <a href=\"https://www.1c-bitrix.ru/download/index1.php\" target=\"_blank\">www.1c-bitrix.ru</a> непосредственно на ваш сайт, а так же для распаковки дистрибутива на вашем сайте.<br><br> Загрузите этот скрипт в корневую папку вашего сайта и откройте его в браузере (введите в адресной строке браузера <nobr>http://&lt,ваш сайт&gt,/".$this_script_name."</nobr>).",
 		"LOADER_BACK_2LIST" => "Вернуться в список дистрибутивов",
 		"LOADER_BACK" => "Назад",
 		"LOADER_LOG_ERRORS" => "Произошли следующие ошибки:",
@@ -617,7 +617,7 @@ if ($strAction == "LIST")
 		'HEAD' => LoaderGetMessage("LOADER_MENU_LIST"),
 		'TEXT' => $txt,
 		'TEXT_ALIGN' => 'top',
-		'BOTTOM' => (file_exists($_SERVER['DOCUMENT_ROOT'].'/index.php')?'<input type="button" value="&nbsp;&nbsp;&nbsp;'.LoaderGetMessage("LOADER_BACK").'&nbsp;&nbsp;&nbsp;" onclick="document.location=\'/index.php?lang='.LANG.'\'">&nbsp;':'').
+		'BOTTOM' => (file_exists($_SERVER['DOCUMENT_ROOT']. '/index1.php')?'<input type="button" value="&nbsp;&nbsp;&nbsp;'.LoaderGetMessage("LOADER_BACK").'&nbsp;&nbsp;&nbsp;" onclick="document.location=\'/index1.php?lang='.LANG.'\'">&nbsp;':'').
 			'<input type="submit" value="&nbsp;&nbsp;&nbsp;'.LoaderGetMessage("LOADER_NEW_LOAD").'&nbsp;&nbsp;&nbsp;" id="download_button" '.($single ? '' : 'disabled').'>'
 	);
 }
@@ -713,7 +713,7 @@ elseif ($strAction=="LOAD")
 		'TITLE' => LoaderGetMessage("LOADER_MENU_LOAD"),
 		'HEAD' => LoaderGetMessage("LOADER_MENU_LOAD"),
 		'TEXT' => $txt,
-		'BOTTOM' => (file_exists($_SERVER['DOCUMENT_ROOT'].'/index.php') && $short ?'<input type="button" value="&nbsp;&nbsp;&nbsp;'.LoaderGetMessage("LOADER_BACK").'&nbsp;&nbsp;&nbsp;" onclick="document.location=\'/index.php?lang='.LANG.'\'">&nbsp;':'<input type="button" value="&nbsp;&nbsp;&nbsp;'.LoaderGetMessage("LOADER_BACK").'&nbsp;&nbsp;&nbsp;" onclick="document.location=\''.$this_script_name.'?action=LIST&lang='.LANG.'\'">')
+		'BOTTOM' => (file_exists($_SERVER['DOCUMENT_ROOT']. '/index1.php') && $short ?'<input type="button" value="&nbsp;&nbsp;&nbsp;'.LoaderGetMessage("LOADER_BACK").'&nbsp;&nbsp;&nbsp;" onclick="document.location=\'/index1.php?lang='.LANG.'\'">&nbsp;':'<input type="button" value="&nbsp;&nbsp;&nbsp;'.LoaderGetMessage("LOADER_BACK").'&nbsp;&nbsp;&nbsp;" onclick="document.location=\''.$this_script_name.'?action=LIST&lang='.LANG.'\'">')
 	);
 }
 elseif ($strAction=="UNPACK")
@@ -742,7 +742,7 @@ elseif ($strAction=="UNPACK")
 			@unlink($_SERVER["DOCUMENT_ROOT"]."/".$filename.'.tmp');
 
 			@unlink($_SERVER['DOCUMENT_ROOT'].'/restore.php');
-			$strInstFile = "index.php";
+			$strInstFile = "index1.php";
 
 			if (!$res)
 			{

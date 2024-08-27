@@ -1,0 +1,21 @@
+total 272
+-rw-rw-r-- 1 user user      0 июл 19 14:41 er.txt
+drwxrwxr-x 2 user user   4096 мая 23 16:23 file
+-rw-rw-r-- 1 user user    187 мая 23 16:30 file.txt
+drwxrwxr-x 6 user user   4096 июл  4 12:13 PhpstormProjects
+-rw-rw-r-- 1 user user      0 мая 23 16:23 qw.txt
+-rw-rw-r-- 1 user user 209938 апр  1 12:40 restore.php
+drwx------ 4 user user   4096 июл 17 10:54 snap
+-rw-rw-r-- 1 user user     43 июл  4 18:03 test
+-rw-rw-r-- 1 user user      0 июл 19 14:41 text.txt
+-rw-rw-r-- 1 user user   1084 июн  3 13:39 wget-log
+drwxr-xr-x 2 user user   4096 мая 13 15:55 Видео
+drwxr-xr-x 2 user user   4096 мая 13 15:55 Документы
+drwxr-xr-x 9 user user   4096 июл 18 11:04 Загрузки
+drwxr-xr-x 2 user user   4096 июн  7 13:32 Изображения
+-rw-rw-r-- 1 user user    136 мая 30 14:34 Ключи от капчи
+drwxr-xr-x 2 user user   4096 мая 13 15:55 Музыка
+drwxr-xr-x 2 user user   4096 мая 13 15:55 Общедоступные
+drwxr-xr-x 3 user user   4096 июл 18 17:44 Рабочий стол
+-rw-rw-r-- 1 user user    281 мая 30 18:09 Ссылки
+drwxr-xr-x 2 user user   4096 мая 13 15:55 Шаблоны

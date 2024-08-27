@@ -1,0 +1,32 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Security",
+		"/security_homebuilder/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Global",
+		"/global-renovation_homebuilder/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Charts",
+		"/charts_homebuilder/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+    Array(
+        "Privacy",
+        "/privacy_homebuilder/",
+        Array(),
+        Array(),
+        ""
+    )
+);
+?>

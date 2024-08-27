@@ -77,7 +77,7 @@ if($arParams["SEF_MODE"] == "Y")
 		if ($folder404 != "/")
 			$folder404 = "/".trim($folder404, "/ \t\n\r\0\x0B")."/";
 		if (substr($folder404, -1) == "/")
-			$folder404 .= "index.php";
+			$folder404 .= "index1.php";
 
 		if ($folder404 != $APPLICATION->GetCurPage(true))
 		{
